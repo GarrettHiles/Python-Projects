@@ -1,4 +1,4 @@
-
+#absolute path
 import os
 
 fName = 'Hello.txt'
