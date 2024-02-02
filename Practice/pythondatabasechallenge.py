@@ -26,3 +26,5 @@ with conn:
                 ('Ak\'not', 'Mangalore', -5))
     conn.commit()
 conn.close()
+
+
