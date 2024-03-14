@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Royal Hotels{% endblock %}
+
+{% block header%}Welcome to the Royal Hotels!{% endblock %}
+
+{% block content %}
+
+
+{% for person in persons %}
+    <ul>
+        {% if person == "Jake" %}
+        <li>Hello {{ person }}</li>
+        {% else %}
+        <li>{{ person }}</li>
+        {% endif %}
+    </ul>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

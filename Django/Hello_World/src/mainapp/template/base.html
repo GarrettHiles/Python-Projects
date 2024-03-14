@@ -1,0 +1,29 @@
+{% load static %}
+
+<html lang="en" class="work">
+	<head>
+	    <meta charset="UTF-8">
+		<title>{% block title%}{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/hello.css' %}">
+
+	</head>
+    <body>
+        <div>
+			<ul class="topnav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="{% url 'admin_con'%}">Admin Console</a></li>
+			</ul>
+			<header>
+				<h1>{% block header %} {% endblock %}</h1>
+			</header>
+            {% block content %} {% endblock %}
+        </div>
+		<section id="block-footer">
+			<p id="footer-right"><a href="#">Terms</a>|<a href="#">Privacy</a></p>
+			<p id="footer-left">&copy;2024 - The Fictional, Royal Hotels</p>
+    </body>
+</html>
